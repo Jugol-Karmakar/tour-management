@@ -26,7 +26,7 @@ const TourSchema = mongoose.Schema(
       default: 0,
     },
   },
-  { collection: "toursCollection" }
+  { collection: "tour" }
 );
 
 module.exports = TourModel = mongoose.model("Tour", TourSchema);
