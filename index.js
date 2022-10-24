@@ -10,10 +10,13 @@ app.use(cors());
 dotenv.config();
 app.use(express.json());
 
+// Database Connect
 require("./config/dbConnect");
 
+// Routes
 app.use("/api/v1", toursRoute);
 
+// Helath Check
 app.get("/", (req, res) => {
   res.send("Hello World");
 });
